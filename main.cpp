@@ -5,9 +5,8 @@ int main()
 {
     int a, b;
     cout << "\n";
-    cout << "please insert an integer\n";
-    cin >> a;
-    cout << "plese insert a second integer\n";
-    cin >> b;
-    cout << "the sum of your inserted numbers are" << " " << a+b;
+    cout << "please insert two integers. \n";
+    cin >> a >> b;
+    cout << "\n";
+    cout << "the sum of the two integers are" << " " << a+b;
 }
