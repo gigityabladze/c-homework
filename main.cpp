@@ -2,9 +2,11 @@
 using namespace std;
 int main()
 {
-    int a, ans;
+    int a, b;
+    cout << "\n";
+    cout << "please enter a three digit integer\n";
     cin >> a;
-    ans = a/10+a%10;
-    cout << "the sum of the two digits in the integer is" << ans;
+    b = (a/10)/10+(a/10)%10+a%10;
+    cout << "the sum of the digits of the integer you entered is " << b;
     return 0;
 }
