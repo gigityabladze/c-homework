@@ -2,10 +2,9 @@
 using namespace std;
 int main()
 {
-    int a, b;
-    cout << "please insert an integer.";
+    int a, ans;
     cin >> a;
-    b = a/10;
-    cout << "the first digit of your integer is:" << b;
+    ans = a/10+a%10;
+    cout << "the sum of the two digits in the integer is" << ans;
     return 0;
 }
