@@ -2,11 +2,11 @@
 using namespace std;
 int main()
 {
-    int a, b;
-    cout << "\n";
-    cout << "please enter a three digit integer\n";
+    cout << "\nPlease enter a 4 digit integer\n";
+
+    int a;
     cin >> a;
-    b = (a/10)/10+(a/10)%10+a%10;
-    cout << "the sum of the digits of the integer you entered is " << b;
-    return 0;
+    
+    int ans = (a/10)/10%10+(a/10)%10;
+    cout << "\nThe sum of the middle numbers in your integer is: " << ans;
 }
