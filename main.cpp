@@ -2,11 +2,19 @@
 using namespace std;
 int main()
 {
-    cout << " Please enter a two digit integer.\n";
-
-    int a;
-    cin >> a;
+    int a, b, c, mx;
+    cout << "\nPlease enter three integers.\n";
+    cin >> a >> b >> c;
+    if (a > b && a > c)
+        mx = a;
     
-    int ans = (a%10)*10+a/10;
-    cout << "Youre integers digits swapped is: " << ans;
+    if (b > a && b > c)
+        mx = b;
+    
+    if (c > a && c > b)
+        mx = c;
+
+    cout << "The biggest integer in you're three integer is: " << mx;
+
+    return 0;
 }
