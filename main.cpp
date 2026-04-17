@@ -2,14 +2,28 @@
 using namespace std;
 int main()
 {
-    int a, b, c, mx;
-    cout << " enter a two digit integer\n";
-    cin >> a;
-    b = a/10;
-    c = a%10;
-    if (b > c) mx = b;
-    if (c > b) mx = c;
-    cout << "the maximum digit is " << mx;
-
+    int a, candys;
+    cout << "enter the number of candys";
+    cin >> candys;
+    int player = 1;
+    question:
+        cout << "player " << player;
+        cin >> a;
+        if (candys >= a)
+        {
+            candys = candys-a;
+            if (candys == 0)
+            {
+                cout << "the winner is " << player;
+                return 0;
+            }
+            if (player == 1)
+                player = 2;
+            else
+                player = 1;
+            goto question;
+        }
+        else
+            cout << "the winner is " << player;
     return 0;
 }
